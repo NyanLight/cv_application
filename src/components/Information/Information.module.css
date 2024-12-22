@@ -5,6 +5,7 @@
     gap: 2rem;
     background-color: aliceblue;
     width: 40%;
+    height: 800px;
     margin: auto;
     border-radius: 2%;
     padding: 1rem;
@@ -21,6 +22,11 @@
 
 .title {
     font-size: 1.5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
 }
 
 .fieldName {

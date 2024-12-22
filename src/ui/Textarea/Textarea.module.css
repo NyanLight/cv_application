@@ -1,0 +1,11 @@
+.label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.textarea {
+    resize: none;
+    text-align: center;
+}
