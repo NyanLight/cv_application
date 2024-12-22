@@ -19,6 +19,7 @@ export function CV () {
 
     return (
         <>
+        <h1>CV Application</h1>
         {status === 'editing' ? <Form {...info} handler={inputHandler} /> : <Information {...info} /> }
         {status === 'editing' ? <Button text="Submit" handler={buttonHandler} /> : <Button text="Edit" handler={buttonHandler} />}
         </>

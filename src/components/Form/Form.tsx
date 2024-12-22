@@ -21,7 +21,7 @@ export function Form (props: FormProps) {
                 <h3>Practical experience</h3>
                 <Input name="companyName" value={props.companyName} label="Company name" inputType="text"  handler={props.handler}></Input>
                 <Input name="positionTitle" value={props.positionTitle} label="Position title" inputType="text" handler={props.handler}></Input>
-                <Textarea value={props.responsibilities} label="Main responsibilities" handler={props.handler}></Textarea>
+                <Textarea name="responsibilities" value={props.responsibilities} label="Main responsibilities" handler={props.handler}></Textarea>
                 <Input name="jobStartDate" value={props.jobStartDate} label="Start date" inputType="date" handler={props.handler}></Input>
                 <Input name="jobEndDate" value={props.jobEndDate} label="End date" inputType="date" handler={props.handler}></Input>
             </section>

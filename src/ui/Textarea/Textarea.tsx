@@ -1,9 +1,9 @@
 import { TextareaProps } from "./Textarea.types"
 
-export function Textarea ({label, handler}: TextareaProps) {
+export function Textarea ({label, handler, name}: TextareaProps) {
     return (
         <label >
-            {label}: <textarea onInput={handler}>Write something!</textarea>
+            {label}: <textarea name={name} onChange={handler} placeholder="You should write something"></textarea>
         </label>
     )
 }

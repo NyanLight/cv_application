@@ -1,27 +1,28 @@
 import { CV } from "../../types";
+import styles from "./Information.module.css"
 
 export function Information (props: CV) {
     return (
-        <div className="information">
-            <section>
-                <h3>Contact information</h3>
-                Name: {props.name}
-                Email: {props.email}
-                Phone: {props.phone}
+        <div className={styles.information}>
+            <section className={styles.section}>
+                <h3 className={styles.title} >Contact information</h3>
+                <div className={styles.field}><span className={styles.fieldName}>Name:</span> {props.name}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Email:</span> {props.email}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Phone:</span> {props.phone}</div>
             </section>
-            <section>
-                <h3>Education information</h3>
-                School name: {props.schoolName}
-                Title of study: {props.studyTitle}
-                Date of graduation: {props.studyEndDate.toString()}
+            <section className={styles.section}>
+                <h3 className={styles.title}>Education information</h3>
+                <div className={styles.field}><span className={styles.fieldName}>School name:</span> {props.schoolName}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Title of study:</span> {props.studyTitle}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Date of graduation:</span> {props.studyEndDate.toString()}</div>
             </section>
-            <section>
-                <h3>Practical experience</h3>
-                Company name: {props.companyName}
-                Position title: {props.positionTitle}
-                Main responsibilities: {props.responsibilities}
-                Job start date: {props.jobStartDate.toString()}
-                Job end date: {props.jobEndDate.toString()}
+            <section className={styles.section}>
+                <h3 className={styles.title}>Practical experience</h3>
+                <div className={styles.field}><span className={styles.fieldName}>Company name:</span> {props.companyName}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Position title:</span> {props.positionTitle}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Main responsibilities:</span> {props.responsibilities}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Job start date:</span> {props.jobStartDate.toString()}</div>
+                <div className={styles.field}><span className={styles.fieldName}>Job end date:</span> {props.jobEndDate.toString()}</div>
             </section>
 
         </div>
