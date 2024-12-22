@@ -1,4 +1,3 @@
-import { SyntheticEvent } from "react";
 import { CV } from "../../types"
 
-export type FormProps =  CV & {handler: (e: SyntheticEvent) => void};
+export type FormProps =  CV & {handler: React.FormEventHandler<HTMLElement>};

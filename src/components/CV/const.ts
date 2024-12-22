@@ -1,4 +1,5 @@
-import { CV } from "./CV.types"
+import { CV } from "../../types";
+
 
 export const defaultCV: CV  = {
     name: 'Frederick Fitzroy',
