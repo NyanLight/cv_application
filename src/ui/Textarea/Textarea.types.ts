@@ -1,4 +1,7 @@
+import {FormEventHandler } from "react";
+
 export type TextareaProps = {
     label: string,
-    handler: () => void,
+    value: string,
+    handler: FormEventHandler<HTMLTextAreaElement>
 }

@@ -1,6 +1,6 @@
-import { cvProps } from "../../types";
+import { CV } from "../../types";
 
-export function information (props: cvProps) {
+export function Information (props: CV) {
     return (
         <div className="information">
             <section>

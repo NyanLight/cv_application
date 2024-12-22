@@ -1,14 +1,13 @@
-export type cvProps = {
+export type CV = {
     name: string,
     email: string,
     phone: string,
     schoolName: string,
     studyTitle: string,
-    studyEndDate: Date | string,
+    studyEndDate: string,
     companyName: string,
     positionTitle: string,
     responsibilities: string,
-    jobStartDate: Date | string,
-    jobEndDate: Date | string,
-    handler: () => void,
+    jobStartDate: string,
+    jobEndDate: string,
 }
