@@ -3,7 +3,7 @@ import styles from "./Information.module.css"
 
 export function Information (props: CV) {
     return (
-        <div className={styles.information}>
+        <div className={styles.information} id="element-to-print">
             <section className={styles.header}>
                 <h1>{props.name}</h1>
             </section>
