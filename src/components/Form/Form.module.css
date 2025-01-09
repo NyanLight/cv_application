@@ -3,14 +3,25 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: aliceblue;
+    background-color: rgba(250, 249, 242, 0.884);
+    color: rgba(59, 59, 59, 0.822);
     width: 40%;
     height: 8%;
     margin: auto;
     border-radius: 2%;
     padding: 1rem;
-    box-shadow: 6px 10px 19px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 10px 19px -10px rgba(0,0,0,0.199);
     margin-bottom: 2rem;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    height: 1.5rem;
 }
 
 .section {
@@ -18,4 +29,14 @@
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    padding: 1rem;
+    border-bottom: 3px dashed rgba(201, 201, 201, 0.555);
+}
+
+.section:last-of-type {
+    border: none;
+}
+
+.sectionTitle {
+    font-size: 2rem;
 }
